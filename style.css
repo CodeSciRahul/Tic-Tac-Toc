@@ -1,0 +1,96 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --color: #3498db;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(38, 103, 214, 0.429);
+}
+
+.container {
+    min-width: 390px;
+    align-items: center;
+    color: rgb(200, 45, 122);
+}
+
+.btn {
+    display: inline-block;
+    min-width: 30%;
+    min-height: 100px;
+    font-size: 3rem;
+    border-radius: 15px;
+    margin: 5px;
+    border: none;
+    box-shadow: 1px 1px 20px rgb(205, 22, 22);
+    font-weight: bold;
+    color: rgb(200, 45, 122);
+    background-color: azure;
+    box-sizing: border-box;
+    outline: none;
+    line-height: 1;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.row1{
+    box-sizing: border-box;
+}
+/* Hover effect */
+.btn:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+/* Active (clicked) state */
+.btn:active {
+    background-color: #1f618d;
+    border-color: #1f618d;
+    transform: translateY(2px);
+}
+
+
+.msg {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 29px;
+    color: rgb(67, 80, 229);
+    text-shadow: 2px 2px 20px currentColor;
+    font-weight: bold;
+    display: none;
+}
+
+.chance {
+    margin: 0 0 30px 10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.reset {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.reset button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid var(--color);
+    color: #fff;
+    background-color: var(--color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    box-shadow: 2px 2px 20px var(--color);
+}
